@@ -13,13 +13,14 @@ Some other tools too, rtl_433,RFSniffer, and my memory oscilloscope
 Here is my working succeed journey:
 
 Let's start with the hardware: 
-I used an ESP12E module (ESP8266) with a basic 433 receiver.
+- I used an ESP12E module (ESP8266) with a basic 433 receiver.
 By the way, you have to know that these economic receivers have a big issue, they receive a lot of parasites when they are powered in 5V while in 3,3V, these parasites disappear. Maybe a problem with the integrated power supply regulator ? 
-A raspberry pi 4 with a low cost 433 transmitter.
+- A raspberry pi 4 with a low cost 433 transmitter.
 
-I used an arduino sketch to record the original 54672 remote control with the correct timings then I used an RPI to recreate them.
+With help of https://github.com/sillyfrog/RFreplayESP, I recorded the original 54672 remote control with the correct timings then I used an RPI to recreate them.
 
-With nodered help , Alexa launch my RPI program with correct file parameter. 
+
+Using Nodered help , Alexa launch my RPI program with correct file parameter. 
 
 
 
